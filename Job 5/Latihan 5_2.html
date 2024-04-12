@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Contoh Program Javascript</title>
+    </head>
+    <script language="Javascript">
+        function test () {
+            //meminta input dari pengguna untuk nilai pertama dan kedua
+            val1=window.prompt("Nilai 1 : ")
+            val2=window.prompt("Nilai 2 : ")
+            //menampilkan string "val1==val2" didalam dokumen HTML
+            document.write("<br>" + "val1==val2" + "<br>")
+            //menampilkan hasil perbandingan nilai val1 dan val2 menggunakan operator ==
+            document.write(val1==val2)
+            //menampilkan string "val1!=val2" didalam dokumen HTML
+            document.write("<br>" + "val1!==val2" + "<br>")
+            //menampilkan hasil perbandingan nilai val1 dan val2 menggunakan operator !==
+            document.write(val1!==val2)
+            //menampilkan string "val1>val2" didalam dokumen HTML
+            document.write("<br>" + "val1&gtval2" + "<br>")
+            //menampilkan hasil perbandingan nilai val1 dan val2 menggunakan operator >
+            document.write(val1>val2)
+            //menampilkan string "val1<val2" didalam dokumen HTML
+            document.write("<br>" + "val1&ltval2" + "<br>")
+            //menampilkan hasil perbandingan nilai val1 dan val2 menggunakan operator <
+            document.write(val1<val2)
+        }   
+    </script>
+    <body>
+        <input type="button" name="button1" value="relational" onclick=test()>
+    </body>
+</html>

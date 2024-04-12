@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Contoh if-else</title>
+    </head>
+    <script language="Javascript">
+        //variabel 'nilai' diinisialisasi dgn nilai yg dimasukkan oleh pengguna melalui prompt
+        var nilai = prompt("Nilai (0-100): ", 0);
+        //variabel 'hasil' diinisialisasi dgn string kosong
+        var hasil = "";
+        //dilakukan pengecekan kondisi, jika nilai lebih besar atau sama dgn 60
+        if(nilai>=60)
+            //jika kondisi terpenuhi, variabel 'hasil' diisi dgn string "lulus"
+            hasil = "lulus";
+        else
+            //jika kondisi tidak terpenuhi, variabel 'hasil' diisi dgn string "tidak lulus"
+            hasil = "tidak lulus";
+        //menampilkan hasil (berupa string "Hasil : " ditambah dgn nilai dari variabel 'hasil') didalam dokumen HTML
+        document.write("Hasil : " + hasil);
+    </script>
+</html>

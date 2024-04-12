@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Contoh if-else</title>
+    </head>
+    <script language="Javascript">
+        function test () {
+            //meminta input dari pengguna dari rentang 1-5 melalui prompt
+            val1=window.prompt("Input nilai (1-5): ")
+            //dilakukan switch case untuk memilih aksi berdasarkan nilai yg dimasukkan
+            switch (val1) {
+                case "1":
+                    //jika val1 adalah "1", tulis "bilangan satu" didalam dokumen HTML
+                    document.write("bilangan satu")
+                    break
+                case "2":
+                    //jika val1 adalah "2", tulis "bilangan dua" didalam dokumen HTML
+                    document.write("bilangan dua")
+                    break
+                case "3":
+                    //jika val1 adalah "3", tulis "bilangan tiga" didalam dokumen HTML
+                    document.write("bilangan tiga")
+                    break
+                case "4":
+                    //jika val1 adalah "4", tulis "bilangan empat" didalam dokumen HTML
+                    document.write("bilangan empat")
+                    break
+                case "5":
+                    //jika val1 adalah "5", tulis "bilangan lima" didalam dokumen HTML
+                    document.write("bilangan lima")
+                    break
+                default:
+                    //jika val1 bukan 1-5, tulis "bilangan lainnya" didala, dokumen HTML
+                    document.write("bilangan lainnya")
+            }
+        }
+    </script>
+    <body>
+        <input type="button" name="button1" value="switch" onclick="test()">
+    </body>
+</html>

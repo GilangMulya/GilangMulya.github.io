@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>UTS PEMOGRAMAN WEB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="header"><img src="teknik unp.png" class="logo"><h1>UTS PEMROGRAMAN WEB</h1></div>
+            </div>
+            <div class="row">
+                <div class="navigation">
+                    <a class="one" href="beranda.html">BERANDA</a>&nbsp; &nbsp;
+                    <a class="two" href="pendidikan formal.html">PENDIDIKAN FORMAL</a>&nbsp; &nbsp;
+                    <a class="three" href="pendidikan nonformal.html">PENDIDIKAN NON FORMAL</a>&nbsp; &nbsp;
+                    <a class="four" href="pengalaman organisasi.html">PENGALAMAN ORGANISASI</a>&nbsp; &nbsp;
+                    <a class="five" href="gallery.html">GALLERY</a>&nbsp; &nbsp;
+                    <a class="six" href="kalkulator.html">KALKULATOR</a>&nbsp; &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="sidebar">
+                    <ul type="disc">
+                        <li><a class="job1" href="job1.html">JOB 1</a></li>
+                        <li><a class="job2" href="job2.html">JOB 2</a></li>
+                        <li><a class="job3" href="job3.html">JOB 3</a></li>
+                        
+                    </ul>
+                    
+                    <div id="datetime"></div>
+                    <script type="text/javascript">
+                        function displayDateTime() {
+                            var d = new Date();
+                            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                            var monthname = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                            var hours = d.getHours();
+                            var minutes = d.getMinutes();
+                            var seconds = d.getSeconds();
+                            var ampm = hours >= 12 ? 'PM' : 'AM';
+                            hours = hours % 12;
+                            hours = hours ? hours : 12;
+                            minutes = minutes < 10 ? '0' + minutes : minutes;
+                            seconds = seconds < 10 ? '0' + seconds : seconds;
+                            var dateTimeStr = weekday[d.getDay()] + ", " + d.getDate() + " " + monthname[d.getMonth()] + " " + d.getFullYear() + " " + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                            document.getElementById("datetime").innerHTML = dateTimeStr;
+                        }
+                    
+                        displayDateTime();
+                    
+                        setInterval(displayDateTime, 1000);
+                    </script>
+                </div>
+                <div class="content">
+                    <div class="foto">
+                        <img src="belajar4.jpg">
+                        <img src="krida.jpg"> 
+                        <img src="krida2.jpg">
+                        <img src="belajar2.jpg">
+                        <img src="belajar3.jpg">
+                        <img src="zoom.jpg">
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <ul type="disc">
+                        <li><a class="job4" href="job4.html">JOB 4</a></li>
+                        <li><a class="job5" href="job5.html">JOB 5</a></li>
+                    </ul>
+                    
+                    <div id="sosmed">
+                        <a href="https://www.tiktok.com/@gilangglangxx?_t=8lSoJp3nzCi&_r=1"><img border="0" src="tiktok.png" width="75" height="75"></a> 
+                        <br>
+                        <a href="https://wa.me/6285216793813"><img border="0" src="wa.png" width="75" height="75"></a> 
+                        <br>
+                        <a href="https://www.instagram.com/gilangmulya.p/?hl=en"><img border="0" src="ig.png" width="50" height="50"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer" class="bawah">23343073-M.Gilang Mulya Putra-Informatika-Elektronika-Teknik-Universitas Negeri Padang</div>
+            </div>
+        </div>
+    </body>
+</html>

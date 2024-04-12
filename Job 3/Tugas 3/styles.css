@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navigation {
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navigation ul li:last-child {
+  margin-right: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.section {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #999;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Tambahkan gaya untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Garis bawah untuk setiap baris */
+}
+
+table th {
+  background-color: #f2f2f2; /* Warna latar belakang untuk header tabel */
+  color: #333;
+}
+/* styles.css */
+
+/* styles.css */
+
+#imageGallery img {
+  width: 100px; /* Menetapkan lebar gambar */
+  height: 140px; /* Menetapkan tinggi gambar */
+}

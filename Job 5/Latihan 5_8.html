@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Form input</title>
+    </head>
+    <script language="Javascript">
+        function test() {
+            //mengambil nilai dari input dgn nama T1 didalam form dgn nama kirim
+            var val1 = document.kirim.T1.value;
+            //melakukan pengecekan apakah nilai val1 merupakan bilangan ganjil atau genap
+            if (val1 % 2 == 0)
+                //jika val1 adalah bilangan genap, tulis "bilangan genap" didalam input dgn nama T2
+                document.kirim.T1.value = "bilangan genap";
+            else
+                //jika val1 adalah bilangan ganjil, tulis "bilangan ganjil" didalam input dgn nama T2
+                document.kirim.T2.value = "bilangan ganjil";
+        }
+    </script>
+    <body>
+        <form method="post" name="kirim">
+            <p>bilangan <input type="text" name="T1" size="20">
+            merupakan <input type="text" name="T2" size="20">
+            </p>
+            <p><input type="button" value="TEBAK" name="B1" onclick=test()>
+            </p>
+        </form>
+    </body>
+</html>

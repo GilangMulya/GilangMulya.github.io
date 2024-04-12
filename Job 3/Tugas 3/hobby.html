@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Pribadi - Hobby</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Biodata Pribadi</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Hobby</h2>
+    <p>Ini adalah halaman hobby.</p>
+    <p>Saya memiliki beberapa hobi yang saya sukai, di antaranya:</p>
+    <ul>
+      <li>Bermain video games</li>
+      <li>Membaca buku</li>
+      <li>Bermain sepak bola</li>
+    </ul>
+  </div>
+
+  <footer>
+    <footer>
+        <p id="datetime">&copy; 2024 Biodata Pribadi</p>
+      </footer>
+      
+      <script>
+        function updateDateTime() {
+          var datetimeElement = document.getElementById("datetime");
+          var now = new Date();
+          var date = now.toLocaleDateString();
+          var time = now.toLocaleTimeString();
+          datetimeElement.textContent = date + " " + time;
+        }
+      
+        // Panggil fungsi updateDateTime setiap detik
+        setInterval(updateDateTime, 1000);
+      
+        // Panggil fungsi pertama kali saat halaman dimuat
+        updateDateTime();
+      </script>
+      
+  </footer>
+</body>
+</html>
